@@ -54,7 +54,7 @@ poetrycheck:
 	poetry check --lock
 
 .PHONY: openapi-files
-openapi-files:
+openapi:
 	poetry run python ./openapi/combine_openapi.py
 	# Used to parse public routes only into a swagger file.  Use for postman file given to customers.
 	poetry run python ./openapi/parse_public_openapi.py
