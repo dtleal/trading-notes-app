@@ -29,6 +29,15 @@ bash:
 runserver:
 	python manage.py runserver
 
+localmakemigrations:
+	python manage.py makemigrations
+
+localmigrate:
+	python manage.py migrate
+
+createsuperuser:
+	python manage.py createsuperuser
+
 .PHONY: ruff
 ruff:
 	poetry run ruff . --fix
