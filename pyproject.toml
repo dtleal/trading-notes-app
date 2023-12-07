@@ -16,6 +16,7 @@ black = "^23.11.0"
 isort = "^5.12.0"
 pillow = "^10.1.0"
 django-money = "^3.4.0"
+django-storages = "^1.14.2"
 
 
 [build-system]

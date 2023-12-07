@@ -70,6 +70,8 @@ class Trade(models.Model):
     error = models.BooleanField()
     description = models.TextField()
     image = models.ImageField(upload_to="trade_images/", null=True, blank=True)
+    # TODO: add bucket save
+    #image = models.ImageField(upload_to="caminho/dentro/do/seu/bucket/", null=True, blank=True)
 
     def __str__(self):
         return f"{self.asset} - {self.date_time}"
